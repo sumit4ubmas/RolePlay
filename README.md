@@ -53,10 +53,21 @@ npm run test
 npm run build
 ```
 
+
+## CI workflow
+
+GitHub Actions workflow is included at `.github/workflows/ci.yml` and runs on both `push` and `pull_request` events:
+
+- `npm install`
+- `npm run lint`
+- `npm run test`
+- `npm run build`
+
 ## Project structure
 
 ```text
 .
+├─ .github/workflows/ci.yml
 ├─ src/
 │  ├─ app/
 │  │  ├─ page.tsx                # Home page
