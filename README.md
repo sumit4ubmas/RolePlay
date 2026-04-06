@@ -63,6 +63,8 @@ GitHub Actions workflow is included at `.github/workflows/ci.yml` and runs on bo
 - `npm run test`
 - `npm run build`
 
+This workflow intentionally uses `npm install` (instead of `npm ci`) so it can run even when a lockfile is not committed yet.
+
 ## Project structure
 
 ```text
